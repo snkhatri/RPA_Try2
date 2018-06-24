@@ -5,6 +5,13 @@ import requests
 app = Flask(__name__)
 port = '5000'
 
+from flask import Flask, request, jsonify
+import json
+import requests
+
+app = Flask(__name__)
+port = '5000'
+
 @app.route('/', methods=['POST'])
 def index():
   data = json.loads(request.get_data())

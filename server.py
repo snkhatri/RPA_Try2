@@ -3,6 +3,10 @@ import json
 import requests
 import os
 
+import json
+import requests
+import os
+
 app = Flask(__name__)
 port = int(os.environ["PORT"])
 print(port)
